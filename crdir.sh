@@ -21,6 +21,6 @@ name=$3
 ssh -q -t ${jmpserver} <<END1
 	ssh -q -t ${trserver} <<END2
 	[[ -d ${name} ]] && echo "Error directory already
-exsists" || mkdir ${name}
+exists" || mkdir ${name}
 END2
 END1
