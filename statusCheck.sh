@@ -2,7 +2,7 @@
 #Author: Nirjas Jakilim
 
 flag=0 #Intial flag status
-host=192.168.6.194
+host=<put host url here>
 
 if [[ -f humio.status ]]
 then
@@ -66,6 +66,6 @@ humioStatus
 
 if [[ $flag == 1 ]]
 then
-mail -s "[bdhumio01] Humio Service Down Alert" -S replyto="nirjas.mohammad@therapservices.net" nirjas.mohammad@therapservices.net  < humio.status
+mail -s "Humio Service Down Alert" -S replyto="put your email" put your email  < humio.status
 fi
 
